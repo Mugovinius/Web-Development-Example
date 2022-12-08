@@ -1,0 +1,272 @@
+html{
+    background-color:rgb(17, 19, 17);
+}
+.pic1{
+    width:100%;
+    position: relative;
+    margin: 0;
+    height: 770px;
+}
+.logo{
+    max-width: 20%;
+    padding: 10px;
+}
+.nav-center{
+    position: absolute;
+    top: 20px;
+}
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-toggle{
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+.links a{
+    display: block;
+    font: 1rem;
+    color: white;
+    text-decoration: none;
+}
+/* By default hide links*/
+.links{
+    height:0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.show-links{
+    height: 100px;
+}
+.book{
+    padding: 20px;
+    background-color: darkgoldenrod;
+    margin-left:70px;
+    border: transparent;
+    color: white;
+    display: none;
+}
+.header1{
+    position: absolute;
+    top: 120px;
+}
+.header1 h1{
+    font-size: 5rem;
+    color: white;
+}
+.discover{
+    background-color: darkslateblue;
+    padding: 20px;
+    margin:20px;
+    color: white;
+    border-color: white;
+}
+@keyframes vinicious{
+    from {rotate: 0deg;}
+    to {rotate:360deg;}
+}
+.anim1{
+    animation-name: vinicious;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@media (min-width:800px){
+    .nav-toggle{
+        display: none;
+    }
+    .logo{
+        max-width: 30%;
+        padding:10px;
+    }
+    .nav-center{
+        max-width: 1170px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    .links{
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .links a{
+        padding: 0;
+        margin: 0 1.5rem;
+        font-size: 1.0rem;
+    }
+    .book{
+        display: inline;
+    }
+    .pic1{
+        height: auto;
+    }
+    .header1{
+        top:70px;
+    }
+    .header1 h1{
+        font-size: 10rem;
+    }
+    .anim1{
+        float: right;
+        margin: 40px;
+    }
+}
+.container1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pic2{
+    position: relative;
+    margin:20px;
+    margin-top: 100px;
+}
+.pic3{
+    position: absolute;
+    left:200px;
+}
+#text1{
+    color: darkgoldenrod;
+    font-size: 4rem;
+    margin-top: 0;
+}
+.div2{
+    color: white;
+    padding: 10px;
+    position: relative;
+    width:650px;
+}
+.div2 p{
+    font-size: 2rem;
+}
+@media (max-width:800px){
+    .pic2{
+        margin-top: 50px;
+        max-width: 100%;
+    }
+    .pic3{
+        max-width: 50%;
+    }
+    .container1{
+        display: flex;
+        flex-direction: column;
+    }
+    .div2{
+        width: auto;
+    }
+}
+.div3{
+    text-align: center;
+}
+.div3 h4{
+    color: darkgoldenrod;
+}
+.div3 h1{
+    color: white;
+}
+.diamond1{
+    transform: rotate(180deg);
+}
+.container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+@media (max-width:800px){
+    .container2{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    .diamond{
+        display: none;
+    }
+}
+.pic4{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+    z-index: 1;
+}
+@media (max-width:800px){
+    .pic4{
+        width:100%;
+    }
+}
+.div4{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    width:300px;
+}
+.fom{
+    color:darkgoldenrod;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    font-size: 2rem;
+}
+.fominput{
+    color: darkgoldenrod;
+    background-color: transparent;
+    border: none;
+    border-bottom:5px solid darkgoldenrod;
+    width:95%;
+    height:40px;
+    font-size: 2rem;
+}
+.centerpic{
+    margin-left: 150px;
+    margin-top: 20px;
+}
+@media (max-width:800px){
+    .fom{
+        width:auto;
+    }
+    .centerpic{
+        margin-left: 50px;
+    }
+}
+.container3{
+    display: flex;
+    flex-direction: row;
+}
+.div5{
+    margin:50px;
+}
+.container4{
+    display: flex;
+    flex-direction: row;
+}
+.container5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media (max-width:800px){
+    .container3{
+        flex-direction: column;
+    }
+    .div5{
+        margin: 10px;
+    }
+    .container4{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .container5{
+        flex-direction: column;
+    }
+}

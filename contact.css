@@ -1,0 +1,175 @@
+html{
+    background-color:rgb(17, 19, 17);
+}
+.logo{
+    max-width: 20%;
+    padding: 10px;
+}
+.nav-center{
+    top: 20px;
+}
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-toggle{
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+.links a{
+    display: block;
+    font: 1rem;
+    color: white;
+    text-decoration: none;
+}
+/* By default hide links*/
+.links{
+    height:0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.show-links{
+    height: 100px;
+}
+.book{
+    padding: 20px;
+    background-color: darkgoldenrod;
+    margin-left:70px;
+    border: transparent;
+    color: white;
+    display: none;
+}
+@media (min-width:800px){
+    .nav-toggle{
+        display: none;
+    }
+    .logo{
+        max-width: 30%;
+        padding:10px;
+    }
+    .nav-center{
+        max-width: 1170px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    .links{
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .links a{
+        padding: 0;
+        margin: 0 1.5rem;
+        font-size: 1.0rem;
+    }
+    .book{
+        display: inline;
+    }
+}
+.div1{
+    margin:20px;
+}
+#highlights{
+    color:darkgoldenrod;
+    font-size: 3rem;
+}
+#title1{
+    color:white;
+    font-size: 5rem;
+}
+.container1{
+    display: flex;
+    flex-direction: row;
+}
+.fom{
+    color:darkgoldenrod;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    font-size: 2rem;
+}
+.fominput{
+    color: darkgoldenrod;
+    background-color: transparent;
+    border: none;
+    border-bottom:5px solid darkgoldenrod;
+    width:95%;
+    height:40px;
+    font-size: 2rem;
+}
+.fom1{
+    color: darkgoldenrod;
+    width: auto;
+    font-size: 2rem;
+    margin: 30px;
+}
+.fomsubmit{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: darkgoldenrod;
+}
+
+.fomsubmit:hover{
+    background-color: white;
+    cursor: pointer;
+}
+.div2{
+    text-align: center;
+}
+@media (max-width:800px){
+    .container1{
+        flex-direction: column;
+    }
+    .fom{
+        width: auto;
+    }
+}
+.container3{
+    display: flex;
+    flex-direction: row;
+}
+.div5{
+    margin:50px;
+}
+.container4{
+    display: flex;
+    flex-direction: row;
+}
+.container5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media (max-width:800px){
+    .container3{
+        flex-direction: column;
+    }
+    .div5{
+        margin: 10px;
+    }
+    .container4{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .container5{
+        flex-direction: column;
+    }
+}
+@keyframes vinicious{
+    from {rotate: 0deg;}
+    to {rotate:360deg;}
+}
+.anim1{
+    animation-name: vinicious;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
